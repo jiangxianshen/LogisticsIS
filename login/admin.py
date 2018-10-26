@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import User
+from .models import ManagerUser
 # Register your models here.
 
 
-@admin.register(User)
+@admin.register(ManagerUser)
 class UserAdmin(admin.ModelAdmin):
 
     list_display = ("username", )
