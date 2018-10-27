@@ -10,3 +10,12 @@ class Ship(models.Model):
     def __str__(self):
         return "%s" % (self.ship_name)
 
+
+class Berth(models.Model):
+    berth_name = models.CharField(max_length=50)
+    berth_id = models.IntegerField(primary_key=True)
+    berth_cap = models.IntegerField(editable=False, default=20)
+    berth_used = models.IntegerField()
+
+    def __str__(self):
+        return "%s" % (self.berth_name)
