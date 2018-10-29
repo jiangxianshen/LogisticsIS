@@ -6,14 +6,23 @@ from .forms import LoginForm
 
 
 def user_login(request):
-    if request.method == 'POST':
-        login_form = LoginForm(request.POST)
-        if login_form.is_valid():
-            user = login_form.cleaned_data['user']
-            login(request, user)
-            return redirect('/')
+    if request.user.is_authenticated:
+        return redirect('/')
     else:
-        login_form = LoginForm()
+        if request.method == 'POST':
+            login_form = LoginForm(request.POST)
+            if login_form.is_valid():
+                user = login_form.cleaned_data['user']
+                login(request, user)
+                return redirect('/')
+        else:
+            login_form = LoginForm()
 
-    context = {'login_form':login_form, }
-    return render(request, "login.html", context)
+        context = {'login_form':login_form, }
+        return render(request, "login.html", context)
+
+def home_page(request):
+    if request.user.is_authenticated:
+        return render(request, "index.html")
+    else:
+        return redirect('login/')

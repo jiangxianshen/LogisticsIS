@@ -1,10 +1,458 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80a1fe75-6467-4a4f-8cd3-a04c7f832831" name="Default Changelist" comment="login模块补全，输入空字段仍然报错">
+    <list default="true" id="80a1fe75-6467-4a4f-8cd3-a04c7f832831" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/login/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/dashboard.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/tabler.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/tabler.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/feather/feather-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/feather/feather-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/feather/feather-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/feather/feather-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/browsers/android-browser.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/browsers/aol-explorer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/browsers/blackberry.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/browsers/camino.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/browsers/chrome.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/browsers/chromium.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/browsers/dolphin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/browsers/edge.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/browsers/firefox.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/browsers/ie.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/browsers/maxthon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/browsers/mozilla.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/browsers/netscape.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/browsers/opera.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/browsers/safari.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/browsers/sleipnir.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/browsers/uc-browser.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/browsers/vivaldi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/crypto-currencies/bitcoin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/crypto-currencies/cardano.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/crypto-currencies/dash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/crypto-currencies/eos.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/crypto-currencies/ethereum.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/crypto-currencies/litecoin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/crypto-currencies/nem.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/crypto-currencies/ripple.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ad.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ae.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/af.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ai.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/al.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/am.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ao.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/aq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/as.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/at.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/au.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/aw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ax.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/az.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ba.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/bb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/bd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/be.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/bf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/bg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/bh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/bi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/bj.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/bl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/bm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/bn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/bo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/bq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/br.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/bs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/bt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/bv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/bw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/by.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/bz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ca.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/cc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/cd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/cf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/cg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ci.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ck.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/cl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/cm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/cn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/co.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/cr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/cu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/cv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/cw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/cx.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/cy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/cz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/de.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/dj.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/dk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/dm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/do.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/dz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ec.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ee.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/eg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/eh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/er.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/es.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/et.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/eu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/fi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/fj.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/fk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/fm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/fo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/fr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ga.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gb-eng.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gb-nir.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gb-sct.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gb-wls.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ge.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/gy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/hk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/hm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/hn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/hr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ht.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/hu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/id.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ie.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/il.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/im.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/in.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/io.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/iq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ir.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/is.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/it.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/je.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/jm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/jo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/jp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ke.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/kg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/kh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ki.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/km.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/kn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/kp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/kr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/kw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ky.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/kz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/la.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/lb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/lc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/li.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/lk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/lr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ls.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/lt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/lu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/lv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ly.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ma.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/mc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/md.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/me.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/mf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/mg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/mh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/mk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ml.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/mm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/mn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/mo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/mp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/mq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/mr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ms.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/mt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/mu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/mv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/mw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/mx.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/my.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/mz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/na.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/nc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ne.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/nf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ng.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ni.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/nl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/no.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/np.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/nr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/nu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/nz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/om.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/pa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/pe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/pf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/pg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ph.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/pk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/pl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/pm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/pn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/pr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ps.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/pt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/pw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/py.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/qa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/re.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ro.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/rs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ru.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/rw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/sa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/sb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/sc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/sd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/se.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/sg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/sh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/si.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/sj.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/sk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/sl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/sm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/sn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/so.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/sr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ss.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/st.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/sv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/sx.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/sy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/sz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/tc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/td.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/tf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/tg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/th.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/tj.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/tk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/tl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/tm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/tn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/to.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/tr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/tt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/tv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/tw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/tz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ua.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ug.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/um.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/un.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/us.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/uy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/uz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/va.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/vc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ve.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/vg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/vi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/vn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/vu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/wf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ws.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/ye.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/yt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/za.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/zm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/flags/zw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/2checkout-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/2checkout.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/alipay-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/alipay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/amazon-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/amazon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/americanexpress-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/americanexpress.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/applepay-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/applepay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/bancontact-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/bancontact.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/bitcoin-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/bitcoin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/bitpay-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/bitpay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/cirrus-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/cirrus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/clickandbuy-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/clickandbuy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/coinkite-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/coinkite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/dinersclub-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/dinersclub.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/directdebit-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/directdebit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/discover-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/discover.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/dwolla-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/dwolla.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/ebay-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/ebay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/eway-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/eway.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/giropay-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/giropay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/googlewallet-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/googlewallet.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/ingenico-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/ingenico.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/jcb-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/jcb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/klarna-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/klarna.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/laser-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/laser.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/maestro-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/maestro.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/mastercard-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/mastercard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/monero-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/monero.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/neteller-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/neteller.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/ogone-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/ogone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/okpay-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/okpay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/paybox-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/paybox.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/paymill-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/paymill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/payone-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/payone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/payoneer-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/payoneer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/paypal-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/paypal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/paysafecard-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/paysafecard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/payu-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/payu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/payza-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/payza.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/ripple-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/ripple.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/sage-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/sage.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/sepa-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/sepa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/shopify-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/shopify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/skrill-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/skrill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/solo-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/solo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/square-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/square.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/stripe-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/stripe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/switch-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/switch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/ukash-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/ukash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/unionpay-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/unionpay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/verifone-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/verifone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/verisign-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/verisign.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/visa-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/visa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/webmoney-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/webmoney.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/westernunion-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/westernunion.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/worldpay-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/payments/worldpay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/require.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/vendors/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/vendors/chart.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/vendors/circle-progress.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/vendors/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/vendors/jquery-3.2.1.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/vendors/jquery-jvectormap-2.0.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/vendors/jquery-jvectormap-de-merc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/vendors/jquery-jvectormap-world-mill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/vendors/jquery.sparkline.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/vendors/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/vendors/selectize.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/charts-c3/js/c3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/charts-c3/js/d3.v3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/charts-c3/plugin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/charts-c3/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/fullcalendar/js/fullcalendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/fullcalendar/js/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/fullcalendar/plugin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/fullcalendar/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/fonts/materialdesignicons/materialdesignicons-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/fonts/materialdesignicons/materialdesignicons-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/fonts/materialdesignicons/materialdesignicons-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/fonts/materialdesignicons/materialdesignicons-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/fonts/materialdesignicons/materialdesignicons-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/fonts/simple-line-icons/Simple-Line-Icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/fonts/simple-line-icons/Simple-Line-Icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/fonts/simple-line-icons/Simple-Line-Icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/fonts/simple-line-icons/Simple-Line-Icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/fonts/simple-line-icons/Simple-Line-Icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/fonts/themify/themify.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/fonts/themify/themify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/fonts/themify/themify.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/fonts/themify/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/fonts/weathericons/weathericons-regular-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/fonts/weathericons/weathericons-regular-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/fonts/weathericons/weathericons-regular-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/fonts/weathericons/weathericons-regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/fonts/weathericons/weathericons-regular-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/iconfonts/plugin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/input-mask/js/jquery.mask.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/input-mask/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/maps-google/plugin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/maps-google/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/prismjs/js/prism.pack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/prismjs/plugin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/plugins/prismjs/plugin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,32 +519,32 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="7" />
+          <entry key="html" value="9" />
           <entry key="js" value="5" />
-          <entry key="py" value="25" />
+          <entry key="py" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="7" />
+          <entry key="HTML" value="9" />
           <entry key="JavaScript" value="5" />
-          <entry key="Python" value="25" />
+          <entry key="Python" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="477" />
+          <entry key="html" value="765" />
           <entry key="js" value="7" />
-          <entry key="py" value="1415" />
-          <entry key="txt" value="74" />
+          <entry key="py" value="1585" />
+          <entry key="txt" value="90" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="477" />
+          <entry key="HTML" value="765" />
           <entry key="JavaScript" value="7" />
-          <entry key="PLAIN_TEXT" value="74" />
-          <entry key="Python" value="1415" />
+          <entry key="PLAIN_TEXT" value="90" />
+          <entry key="Python" value="1585" />
         </counts>
       </usages-collector>
     </session>
@@ -104,44 +552,38 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login/urls.py">
+        <entry file="file://$PROJECT_DIR$/login/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="217">
+              <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#45#0" expanded="true" />
+                <marker date="1540827382500" expanded="true" signature="711:716" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logistics/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/login/templates/login.html">
+        <entry file="file://$PROJECT_DIR$/login/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" column="102" selection-start-line="9" selection-start-column="102" selection-end-line="9" selection-end-column="102" />
+            <state relative-caret-position="250">
+              <caret line="46" column="85" selection-start-line="46" selection-start-column="85" selection-end-line="46" selection-end-column="85" />
               <folding>
-                <element signature="e#2077#2083#0#HTML" expanded="true" />
-                <element signature="e#2089#2096#0#HTML" expanded="true" />
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logistics/settings.py">
+        <entry file="file://$PROJECT_DIR$/login/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+            <state relative-caret-position="80">
+              <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,6 +602,8 @@
     <findStrings>
       <find>me</find>
       <find>create</find>
+      <find>./</find>
+      <find>jane</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,12 +618,13 @@
         <option value="$PROJECT_DIR$/logistics/settings.py" />
         <option value="$PROJECT_DIR$/shipmanage/admin.py" />
         <option value="$PROJECT_DIR$/login/templates/error.html" />
-        <option value="$PROJECT_DIR$/login/views.py" />
         <option value="$PROJECT_DIR$/login/forms.py" />
         <option value="$PROJECT_DIR$/static/login/js/jquery.min.js" />
         <option value="$PROJECT_DIR$/logistics/urls.py" />
-        <option value="$PROJECT_DIR$/login/urls.py" />
         <option value="$PROJECT_DIR$/login/templates/login.html" />
+        <option value="$PROJECT_DIR$/login/urls.py" />
+        <option value="$PROJECT_DIR$/login/views.py" />
+        <option value="$PROJECT_DIR$/login/templates/index.html" />
       </list>
     </option>
   </component>
@@ -319,7 +764,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540710697831</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修复了一些细微的bug">
+      <created>1540824827971</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1540824827971</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -404,7 +856,8 @@
     <MESSAGE value="继承abstractuser并创建了superuser" />
     <MESSAGE value="shipmanager数据库雏形(泊位和船只)" />
     <MESSAGE value="login模块补全，输入空字段仍然报错" />
-    <option name="LAST_COMMIT_MESSAGE" value="login模块补全，输入空字段仍然报错" />
+    <MESSAGE value="修复了一些细微的bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复了一些细微的bug" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/manage.py">
@@ -484,30 +937,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logistics/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -520,11 +953,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/login/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="102" selection-start-line="9" selection-start-column="102" selection-end-line="9" selection-end-column="102" />
+        <state>
+          <caret selection-end-column="22" />
           <folding>
             <element signature="e#2077#2083#0#HTML" expanded="true" />
             <element signature="e#2089#2096#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+            <marker date="1540827382500" expanded="true" signature="711:716" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="46" column="85" selection-start-line="46" selection-start-column="85" selection-end-line="46" selection-end-column="85" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
