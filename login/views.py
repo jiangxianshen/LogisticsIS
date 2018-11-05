@@ -1,5 +1,5 @@
-from django.shortcuts import render, redirect
-from django.contrib.auth import login
+from django.shortcuts import render, redirect, reverse
+from django.contrib.auth import login, logout
 from .forms import LoginForm
 
 # Create your views here.
@@ -26,3 +26,10 @@ def home_page(request):
         return render(request, "index.html")
     else:
         return redirect('login/')
+
+def user_logout(request):
+    logout(request)
+    return redirect(request.GET.get('from', reverse('login')))
+
+def user_register(request):
+    return render(request, "register.html")
