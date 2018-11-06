@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import ManagerUser
+from .models import ManagerUser, RegisterCode
 # Register your models here.
 
 
@@ -7,3 +7,8 @@ from .models import ManagerUser
 class UserAdmin(admin.ModelAdmin):
 
     list_display = ("username", )
+
+@admin.register(RegisterCode)
+class CodeAdmin(admin.ModelAdmin):
+
+    list_display = ("code", "is_new")

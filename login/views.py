@@ -32,4 +32,14 @@ def user_logout(request):
     return redirect(request.GET.get('from', reverse('login')))
 
 def user_register(request):
+    if request.method == 'POST':
+        login_form = LoginForm(request.POST)
+        if login_form.is_valid():
+            user = login_form.cleaned_data['user']
+            login(request, user)
+            return redirect('/')
+    else:
+        login_form = LoginForm()
+
+    context = {'login_form': login_form, }
     return render(request, "register.html")
