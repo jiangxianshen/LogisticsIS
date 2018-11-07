@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib.auth import login, logout
-from .forms import LoginForm
+from .forms import LoginForm, RegisterForm
+from .models import ManagerUser
 
 # Create your views here.
 
@@ -33,13 +34,18 @@ def user_logout(request):
 
 def user_register(request):
     if request.method == 'POST':
-        login_form = LoginForm(request.POST)
-        if login_form.is_valid():
-            user = login_form.cleaned_data['user']
-            login(request, user)
-            return redirect('/')
+        register_form = RegisterForm(request.POST)
+        if register_form.is_valid():
+            username = register_form.cleaned_data['user']
+            password = register_form.cleaned_data['password']
+            email = register_form.cleaned_data['email']
+            ManagerUser.objects.create_user(username=username, password=password, email=email)
+            return redirect('login/')
     else:
-        login_form = LoginForm()
+        register_form = LoginForm()
 
-    context = {'login_form': login_form, }
-    return render(request, "register.html")
+    context = {'register_form': register_form, }
+    return render(request, "register.html", context)
+
+def forget_password(request):
+    return render(request, "forgot.html")
