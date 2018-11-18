@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="author" content="Kodinger">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>My Login Page &mdash; Bootstrap 4 Login Page Snippet</title>
+	<title>忘记密码</title>
 	<link rel="stylesheet" type="text/css" href="{% static '/login/bootstrap/css/bootstrap.min.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static '/login/css/my-login.css' %}">
 </head>
@@ -15,12 +15,12 @@
 			<div class="row justify-content-md-center align-items-center h-100">
 				<div class="card-wrapper">
 					<div class="brand">
-						<img src="img/logo.jpg" alt="bootstrap 4 login page">
+						<img src="{% static '/assets/img/plis.png'%}" alt="bootstrap 4 login page">
 					</div>
 					<div class="card fat">
 						<div class="card-body">
 							<h4 class="card-title">忘记密码？</h4>
-                            <h6 class="card-title">请联系管理员重置密码</h6>
+                            <h6 class="card-title">--请联系管理员重置密码</h6>
                             <a href="{% url 'login'  %}" class="float-right">
                                     <<返回登录页
                                 </a>
