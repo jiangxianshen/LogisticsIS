@@ -34,3 +34,6 @@ def user_logout(request):
 
 def forget_password(request):
     return render(request, "forgot.html")
+
+def user_profile(requset):
+    return render(requset, "profiles.html")
