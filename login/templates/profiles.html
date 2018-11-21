@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>PLIS-主页</title>
+	<title>PLIS-账户设置</title>
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
 	<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css'%}">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
@@ -49,10 +49,6 @@
 										</div>
 									</li>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#"><i class="ti-user"></i>我的信息</a>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#"><i class="ti-settings"></i> 账户设置</a>
-									<div class="dropdown-divider"></div>
 									<a class="dropdown-item" href="{% url 'logout' %}"><i class="fa fa-power-off"></i> 登出</a>
 								</ul>
 								<!-- /.dropdown-user -->
@@ -64,8 +60,8 @@
 			<div class="sidebar">
 				<div class="scrollbar-inner sidebar-wrapper">
 					<ul class="nav">
-						<li class="nav-item active">
-							<a href="">
+						<li class="nav-item">
+							<a href="{% url 'homepage' %}">
 								<i class="la la-dashboard"></i>
 								<p>主页</p>
 							</a>
@@ -97,10 +93,10 @@
 							</a>
 						</li>
                         {% endif %}
-						<li class="nav-item">
-							<a href="icons.html">
+						<li class="nav-item active">
+							<a href="{% url 'profile' %}">
 								<i class="la la-fonticons"></i>
-								<p>Icons</p>
+								<p>账户设置</p>
 							</a>
 						</li>
 					</ul>
@@ -109,206 +105,36 @@
                 <div class="main-panel">
 				<div class="content">
 					<div class="container-fluid">
-						<h4 class="page-title">Forms</h4>
+						<h4 class="page-title">账户设置</h4>
 						<div class="row">
 							<div class="col-md-6">
-								<div class="card">
+                                <form method="POST" class="card" novalidate="" action="{% url 'profile' %}">
 									<div class="card-header">
-										<div class="card-title">Base Form Control</div>
+										<div class="card-title">修改用户信息</div>
 									</div>
 									<div class="card-body">
-										<div class="form-group">
-											<label for="email">Email Address</label>
-											<input type="email" class="form-control" id="email" placeholder="Enter Email">
-											<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        <div class="form-group">
+											<label for="disableinput">用户名</label>
+											<input type="text" class="form-control" id="disableinput" placeholder="{{ user.username }}" disabled>
 										</div>
-										<div class="form-group">
-											<label for="password">Password</label>
-											<input type="password" class="form-control" id="password" placeholder="Password">
+                                        <div class="form-group">
+											<label for="disableinput">邮箱</label>
+											<input type="email" class="form-control" id="disableinput" placeholder="{{ user.email }}" disabled>
 										</div>
-										<div class="form-group form-inline">
-											<label for="inlineinput" class="col-md-3 col-form-label">Inline Input</label>
-											<div class="col-md-9 p-0">
-												<input type="text" class="form-control input-full" id="inlineinput" placeholder="Enter Input">
-											</div>
-										</div>
-										<div class="form-group has-success">
-											<label for="successInput">Success Input</label>
-											<input type="text" id="successInput" value="Success" class="form-control">
-										</div>
-										<div class="form-group has-error has-feedback">
-											<label for="errorInput">Error Input</label>
-											<input type="text" id="errorInput" value="Error" class="form-control">
-											<small id="emailHelp" class="form-text text-muted">Please provide a valid informations.</small>
-										</div>
-										<div class="form-group">
-											<label for="disableinput">Disable Input</label>
-											<input type="text" class="form-control" id="disableinput" placeholder="Enter Input" disabled>
-										</div>
-										<div class="form-check">
-											<label>Gender</label><br/>
-											<label class="form-radio-label">
-												<input class="form-radio-input" type="radio" name="optionsRadios" value=""  checked="">
-												<span class="form-radio-sign">Male</span>
-											</label>
-											<label class="form-radio-label ml-3">
-												<input class="form-radio-input" type="radio" name="optionsRadios" value="">
-												<span class="form-radio-sign">Female</span>
-											</label>
-										</div>
-										<div class="form-group">
-											<label class="control-label">
-												Static
-											</label><p class="form-control-static">hello@themekita.com</p></div>
-											<div class="form-group">
-												<label for="exampleFormControlSelect1">Example select</label>
-												<select class="form-control" id="exampleFormControlSelect1">
-													<option>1</option>
-													<option>2</option>
-													<option>3</option>
-													<option>4</option>
-													<option>5</option>
-												</select>
-											</div>
-											<div class="form-group">
-												<label for="exampleFormControlSelect2">Example multiple select</label>
-												<select multiple class="form-control" id="exampleFormControlSelect2">
-													<option>1</option>
-													<option>2</option>
-													<option>3</option>
-													<option>4</option>
-													<option>5</option>
-												</select>
-											</div>
-											<div class="form-group">
-												<label for="exampleFormControlFile1">Example file input</label>
-												<input type="file" class="form-control-file" id="exampleFormControlFile1">
-											</div>
-											<div class="form-group">
-												<label for="comment">Comment</label>
-												<textarea class="form-control" id="comment" rows="5">
-
-												</textarea>
-											</div>
-											<div class="form-check">
-												<label class="form-check-label">
-													<input class="form-check-input" type="checkbox" value="">
-													<span class="form-check-sign">Agree with terms and conditions</span>
-												</label>
-											</div>
+                                        {% csrf_token %}
+                                        {% for field in Profile_form %}
+                                            <div class="form-group">
+                                            <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                                            {{ field }}
+                                            </div>
+                                            <p class="text-danger">{{ field.errors.as_text }}</p>
+                                        {% endfor %}
 										</div>
 										<div class="card-action">
-											<button class="btn btn-success">Submit</button>
-											<button class="btn btn-danger">Cancel</button>
+											<button type="submit" class="btn btn-success">提交修改</button>
+											<button class="btn btn-danger">取消</button>
 										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="card">
-										<div class="card-header">
-											<div class="card-title">Form Control Styles</div>
-										</div>
-										<div class="card-body">
-											<div class="form-group">
-												<label for="squareInput">Square Input</label>
-												<input type="text" class="form-control input-square" id="squareInput" placeholder="Square Input">
-											</div>
-											<div class="form-group">
-												<label for="squareSelect">Square Select</label>
-												<select class="form-control input-square" id="squareSelect">
-													<option>1</option>
-													<option>2</option>
-													<option>3</option>
-													<option>4</option>
-													<option>5</option>
-												</select>
-											</div>
-											<div class="form-group">
-												<label for="pillInput">Pill Input</label>
-												<input type="text" class="form-control input-pill" id="pillInput" placeholder="Pill Input">
-											</div>
-											<div class="form-group">
-												<label for="pillSelect">Pill Select</label>
-												<select class="form-control input-pill" id="pillSelect">
-													<option>1</option>
-													<option>2</option>
-													<option>3</option>
-													<option>4</option>
-													<option>5</option>
-												</select>
-											</div>
-											<div class="form-group">
-												<label for="solidInput">Solid Input</label>
-												<input type="text" class="form-control input-solid" id="solidInput" placeholder="Solid Input">
-											</div>
-											<div class="form-group">
-												<label for="solidSelect">Solid Select</label>
-												<select class="form-control input-solid" id="solidSelect">
-													<option>1</option>
-													<option>2</option>
-													<option>3</option>
-													<option>4</option>
-													<option>5</option>
-												</select>
-											</div>
-										</div>
-										<div class="card-action">
-											<button class="btn btn-success">Submit</button>
-											<button class="btn btn-danger">Cancel</button>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-header">
-											<div class="card-title">Form Control Styles</div>
-										</div>
-										<div class="card-body">
-											<div class="form-group">
-												<label for="largeInput">Large Input</label>
-												<input type="text" class="form-control form-control-lg" id="largeInput" placeholder="Large Input">
-											</div>
-											<div class="form-group">
-												<label for="largeInput">Default Input</label>
-												<input type="text" class="form-control form-control" id="defaultInput" placeholder="Default Input">
-											</div>
-											<div class="form-group">
-												<label for="smallInput">Small Input</label>
-												<input type="text" class="form-control form-control-sm" id="smallInput" placeholder="Small Input">
-											</div>
-											<div class="form-group">
-												<label for="largeSelect">Large Select</label>
-												<select class="form-control form-control-lg" id="largeSelect">
-													<option>1</option>
-													<option>2</option>
-													<option>3</option>
-													<option>4</option>
-													<option>5</option>
-												</select>
-											</div>
-											<div class="form-group">
-												<label for="defaultSelect">Default Select</label>
-												<select class="form-control form-control" id="defaultSelect">
-													<option>1</option>
-													<option>2</option>
-													<option>3</option>
-													<option>4</option>
-													<option>5</option>
-												</select>
-											</div>
-											<div class="form-group">
-												<label for="smallSelect">Small Select</label>
-												<select class="form-control form-control-sm" id="smallSelect">
-													<option>1</option>
-													<option>2</option>
-													<option>3</option>
-													<option>4</option>
-													<option>5</option>
-												</select>
-											</div>
-										</div>
-										<div class="card-action">
-											<button class="btn btn-success">Submit</button>
-											<button class="btn btn-danger">Cancel</button>
-										</div>
+                                </form>
 									</div>
 								</div>
 							</div>
@@ -349,7 +175,6 @@
 		</div>
 	</div>
 </body>
-
 <script src="{% static 'assets/js/core/jquery.3.2.1.min.js'%}"></script>
 <script src="{% static 'assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js'%}"></script>
 <script src="{% static 'assets/js/core/popper.min.js'%}"></script>

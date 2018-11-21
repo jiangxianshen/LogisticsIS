@@ -49,10 +49,6 @@
 										</div>
 									</li>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#"><i class="ti-user"></i>我的信息</a>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#"><i class="ti-settings"></i> 账户设置</a>
-									<div class="dropdown-divider"></div>
 									<a class="dropdown-item" href="{% url 'logout' %}"><i class="fa fa-power-off"></i> 登出</a>
 								</ul>
 								<!-- /.dropdown-user -->
@@ -65,7 +61,7 @@
 				<div class="scrollbar-inner sidebar-wrapper">
 					<ul class="nav">
 						<li class="nav-item active">
-							<a href="">
+							<a href="{% url 'homepage' %}">
 								<i class="la la-dashboard"></i>
 								<p>主页</p>
 							</a>
@@ -98,9 +94,9 @@
 						</li>
                         {% endif %}
 						<li class="nav-item">
-							<a href="icons.html">
+							<a href="{% url 'profile' %}">
 								<i class="la la-fonticons"></i>
-								<p>Icons</p>
+								<p>账户设置</p>
 							</a>
 						</li>
 					</ul>
@@ -151,7 +147,7 @@
 											<div class="col-7 d-flex align-items-center">
 												<div class="numbers">
 													<p class="card-category">员工数</p>
-													<h4 class="card-title">1,294</h4>
+													<h4 class="card-title">233</h4>
 												</div>
 											</div>
 										</div>
@@ -170,7 +166,7 @@
 											<div class="col-7 d-flex align-items-center">
 												<div class="numbers">
 													<p class="card-category">船舶数</p>
-													<h4 class="card-title">1,345</h4>
+													<h4 class="card-title">15</h4>
 												</div>
 											</div>
 										</div>
@@ -189,7 +185,7 @@
 											<div class="col-7 d-flex align-items-center">
 												<div class="numbers">
 													<p class="card-category">泊位数</p>
-													<h4 class="card-title">1303</h4>
+													<h4 class="card-title">8</h4>
 												</div>
 											</div>
 										</div>
@@ -208,7 +204,7 @@
 											<div class="col-7 d-flex align-items-center">
 												<div class="numbers">
 													<p class="card-category">今日订单</p>
-													<h4 class="card-title">576</h4>
+													<h4 class="card-title">21</h4>
 												</div>
 											</div>
 										</div>
@@ -340,7 +336,7 @@
 										<div class="progress-card">
 											<div class="d-flex justify-content-between mb-1">
 												<span class="text-muted">订单完成情况</span>
-												<span class="text-muted fw-bold"> 576</span>
+												<span class="text-muted fw-bold"> 21</span>
 											</div>
 											<div class="progress mb-2" style="height: 7px;">
 												<div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="65%"></div>
