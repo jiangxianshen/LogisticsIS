@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>PLIS-主页</title>
+	<title>{% block title %}PLIS-主页{% endblock %}</title>
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
 	<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css'%}">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
@@ -38,11 +38,10 @@
 					</form>
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
 						<li class="nav-item dropdown">
-							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false"> <img src="{% static 'assets/img/profile.jpg'%}" alt="user-img" width="36" class="img-circle"><span >{{ user.username }}</span></span> </a>
+							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false"> <span >{{ user.username }}</span> </a>
 							<ul class="dropdown-menu dropdown-user">
 								<li>
 									<div class="user-box">
-										<div class="u-img"><img src="{% static 'assets/img/profile.jpg'%}" alt="user"></div>
 										<div class="u-text">
 											<h4>{{ user.username }}</h4>
 											<p class="text-muted">{{ user.email }}</p><a href="{% url 'profile' %}" class="btn btn-rounded btn-danger btn-sm">查看个人信息</a></div>
@@ -60,6 +59,7 @@
 			<div class="sidebar">
 				<div class="scrollbar-inner sidebar-wrapper">
 					<ul class="nav">
+                    {% block sidebar %}
 						<li class="nav-item active">
 							<a href="{% url 'homepage' %}">
 								<i class="la la-dashboard"></i>
@@ -99,10 +99,12 @@
 								<p>账户设置</p>
 							</a>
 						</li>
+                    {% endblock %}
 					</ul>
 				</div>
 			</div>
 			<div class="main-panel">
+                {% block main-panel %}
 				<div class="content">
 					<div class="container-fluid">
 						<h4 class="page-title">主页</h4>
@@ -366,6 +368,7 @@
 						</div>
 						</div>
 					</div>
+                {% endblock %}
 				</div>
 				<footer class="footer">
 					<div class="container-fluid">
@@ -380,11 +383,10 @@
 						</nav>
 						<div class="copyright ml-auto">
 							Copyright © 2018 —  <a href="#">Port Logistics Information System</a>
-					</div>
+					    </div>
+                    </div>
 				</footer>
 			</div>
-		</div>
-	</div>
 	<!-- Modal -->
 	<div class="modal fade" id="modalUpdate" tabindex="-1" role="dialog" aria-labelledby="modalUpdatePro" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">

@@ -76,3 +76,9 @@ class ProfileForm(forms.Form):
             raise forms.ValidationError("两次输入密码不一致")
         return new_password_re
 
+
+class EmailForm(forms.Form):
+    email = forms.CharField(label='旧密码', widget=forms.EmailInput(attrs={
+                                 'class': 'form-control',
+                                 'placeholder': '请输入新的Email',
+                             }))

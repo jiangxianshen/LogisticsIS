@@ -53,3 +53,14 @@ def user_profile(request):
 
         context = {'Profile_form': Profile_form, }
         return render(request, "profiles.html", context)
+
+def change_email(request):
+    if not request.user.is_authenticated:
+        return redirect('login')
+    else:
+        if request.method == 'POST':
+            email = request.POST.get('email')
+            user = request.user
+            user.email = email
+            user.save()
+        return render(request,"change_email.html")
