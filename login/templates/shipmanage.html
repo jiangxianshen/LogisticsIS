@@ -1,0 +1,45 @@
+{% extends 'index.html' %}
+{% block title %}PLIS-船舶管理{% endblock %}
+{% block sidebar %}
+	<li class="nav-item">
+		<a href="{% url 'homepage' %}">
+			<i class="la la-dashboard"></i>
+			<p>主页</p>
+		</a>
+	</li>
+	<li class="nav-item">
+		<a href="{% url 'order' %}">
+			<i class="la la-table"></i>
+			<p>订单管理</p>
+		</a>
+	</li>
+	<li class="nav-item active">
+		<a href="{% url 'ships' %}">
+			<i class="la la-keyboard-o"></i>
+			<p>船舶管理</p>
+		</a>
+	</li>
+	<li class="nav-item">
+		<a href="notifications">
+			<i class="la la-th"></i>
+			<p>通知</p>
+			<span class="badge badge-count">6</span>
+		</a>
+	</li>
+	{% if user.is_staff  %}
+	<li class="nav-item">
+		<a href="/admin">
+			<i class="la la-font"></i>
+			<p>管理员界面</p>
+		</a>
+	</li>
+	{% endif %}
+	<li class="nav-item">
+		<a href="{% url 'profile' %}">
+			<i class="la la-fonticons"></i>
+			<p>账户设置</p>
+		</a>
+	</li>
+{% endblock %}
+{% block main-panel %}
+{% endblock %}
