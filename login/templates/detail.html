@@ -1,5 +1,5 @@
 {% extends 'index.html' %}
-{% block title %}PLIS-船舶管理{% endblock %}
+{% block title %}PLIS-订单管理{% endblock %}
 {% block sidebar %}
 	<li class="nav-item">
 		<a href="{% url 'homepage' %}">
@@ -13,14 +13,14 @@
 			<p>订单管理</p>
 		</a>
 	</li>
-	<li class="nav-item active">
+	<li class="nav-item">
 		<a href="{% url 'ships' %}">
 			<i class="la la-keyboard-o"></i>
 			<p>船舶管理</p>
 		</a>
 	</li>
-	<li class="nav-item">
-		<a href="{% url 'notification' %}">
+	<li class="nav-item active">
+		<a href="notifications">
 			<i class="la la-th"></i>
 			<p>通知</p>
 			<span class="badge badge-count">6</span>

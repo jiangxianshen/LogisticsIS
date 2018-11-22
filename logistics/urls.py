@@ -21,5 +21,6 @@ from . import settings
 urlpatterns = [
     path(r'admin/', admin.site.urls, name="admin"),
     path('', include("login.urls")),
-    path('manage/', include("shipmanage.urls"))
+    path('manage/', include("shipmanage.urls")),
+    path('notification/', include("notification.urls")),
 ]
