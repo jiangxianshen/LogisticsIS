@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib.auth import login, logout
-from .forms import LoginForm, ProfileForm
+from .forms import LoginForm, ProfileForm, EmailForm
 from .models import ManagerUser
 
 # Create your views here.
@@ -59,8 +59,11 @@ def change_email(request):
         return redirect('login')
     else:
         if request.method == 'POST':
-            email = request.POST.get('email')
-            user = request.user
-            user.email = email
-            user.save()
-        return render(request,"change_email.html")
+            Email_Form = EmailForm(request.POST, user=request.user)
+            if Email_Form.is_valid():
+                pass
+        else:
+            Email_Form = EmailForm()
+
+        context = {'Email_Form': Email_Form, }
+        return render(request,"change_email.html", context)

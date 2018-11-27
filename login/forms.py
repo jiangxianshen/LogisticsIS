@@ -78,7 +78,18 @@ class ProfileForm(forms.Form):
 
 
 class EmailForm(forms.Form):
-    email = forms.CharField(label='旧密码', widget=forms.EmailInput(attrs={
+    email = forms.EmailField(label='新邮箱', widget=forms.EmailInput(attrs={
                                  'class': 'form-control',
                                  'placeholder': '请输入新的Email',
                              }))
+
+    def __init__(self, *args, **kwargs):
+        if 'user' in kwargs:
+            self.user = kwargs.pop('user')
+        super(EmailForm, self).__init__(*args, **kwargs)
+
+    def clean_email(self):
+        email = self.cleaned_data.email
+        if email == '':
+            pass
+        return email
