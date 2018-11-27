@@ -61,7 +61,10 @@ def change_email(request):
         if request.method == 'POST':
             Email_Form = EmailForm(request.POST, user=request.user)
             if Email_Form.is_valid():
-                pass
+                user = request.user
+                new_email = Email_Form.cleaned_data['email']
+                user.set_password(new_email)
+                user.save()
         else:
             Email_Form = EmailForm()
 

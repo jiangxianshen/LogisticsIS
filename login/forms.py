@@ -78,18 +78,23 @@ class ProfileForm(forms.Form):
 
 
 class EmailForm(forms.Form):
+    old_password = forms.CharField(label='请输入密码', widget=forms.PasswordInput(attrs={
+                                    'class': 'form-control',
+                                    'placeholder': '请输入密码',
+                                }))
     email = forms.EmailField(label='新邮箱', widget=forms.EmailInput(attrs={
                                  'class': 'form-control',
                                  'placeholder': '请输入新的Email',
                              }))
+
 
     def __init__(self, *args, **kwargs):
         if 'user' in kwargs:
             self.user = kwargs.pop('user')
         super(EmailForm, self).__init__(*args, **kwargs)
 
-    def clean_email(self):
-        email = self.cleaned_data.email
-        if email == '':
-            pass
-        return email
+    def clean_old_password(self):
+        old_pass = self.cleaned_data.get('old_password','')
+        if not self.user.check_password(old_pass):
+            raise forms.ValidationError('请输入正确的密码')
+        return old_pass
