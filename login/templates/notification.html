@@ -1,5 +1,5 @@
 {% extends 'index.html' %}
-{% block title %}PLIS-订单管理{% endblock %}
+{% block title %}PLIS-通知{% endblock %}
 {% block sidebar %}
 	<li class="nav-item">
 		<a href="{% url 'homepage' %}">
@@ -20,7 +20,7 @@
 		</a>
 	</li>
 	<li class="nav-item active">
-		<a href="notifications">
+		<a href="{% url 'notification' %}">
 			<i class="la la-th"></i>
 			<p>通知</p>
 			<span class="badge badge-count">6</span>
@@ -42,4 +42,31 @@
 	</li>
 {% endblock %}
 {% block main-panel %}
+    <div class="content">
+        <div class="card">
+          <h5 class="card-header">通知</h5>
+          <div class="card-body">
+              {% for article in top_articles %}
+                  <h4 class="card-title" ><a href="#"><font color="black">{{ article.title }}</font></a><font size="3" color="red">[置顶]</font></h4>
+                  <span class="glyphicon glyphicon-time"></span> {{ article.publish_time|date:"Y-m-d" }}
+              {% endfor %}
+          <hr>
+              {% for article in articles %}
+                  <h4 class="card-title"><a href="#"><font color="black">{{ article.title }}</font></a></h4>
+                  <span class="glyphicon glyphicon-time"></span> {{ article.publish_time|date:"Y-m-d" }}
+              {% endfor %}
+          <hr>
+              <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">上一页</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">下一页</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+    </div>
+
 {% endblock %}
