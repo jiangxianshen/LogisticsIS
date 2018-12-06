@@ -43,6 +43,7 @@
 {% endblock %}
 {% block main-panel %}
     <div class="content">
+    <div class="col-md-8">
         <div class="card">
             <div class="card-header">
                <a href="/notification/list/{{ infer }}" class="btn-group-toggle">返回</a>
@@ -51,9 +52,10 @@
               <h5 class="card-title text-center">{{ blogs.title }}</h5>
                 <div class="card-text text-center">{{ blogs.publish_time|date:"Y-m-d" }}</div>
                 <hr>
-              <p class="card-text text-center">{{ blogs.content }}</p>
+              <p class="card-text">{{ blogs.content|safe }}</p>
                 <hr>
             </div>
-        </div>
+         </div>
+    </div>
     </div>
 {% endblock %}
