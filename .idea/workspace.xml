@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/login/models.py" line="2" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="80a1fe75-6467-4a4f-8cd3-a04c7f832831" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/templates/notification.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/templates/notification.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/templates/notification_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/templates/notification_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/templates/ordermanage.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/templates/ordermanage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/templates/profiles.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/templates/profiles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/templates/shipmanage.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/templates/shipmanage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shipmanage/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/shipmanage/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shipmanage/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shipmanage/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,50 +67,50 @@
     <session id="-1211684390">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="40" />
+          <entry key="project.closed" value="41" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.6" value="5" />
           <entry key="project.open.time.7" value="16" />
-          <entry key="project.open.time.8" value="16" />
+          <entry key="project.open.time.8" value="17" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="44" />
+          <entry key="project.opened" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="75" />
+          <entry key="html" value="80" />
           <entry key="js" value="14" />
           <entry key="md" value="1" />
           <entry key="notification" value="1" />
-          <entry key="py" value="79" />
+          <entry key="py" value="85" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="76" />
+          <entry key="HTML" value="81" />
           <entry key="JavaScript" value="14" />
           <entry key="Markdown" value="1" />
-          <entry key="Python" value="79" />
+          <entry key="Python" value="85" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="4053" />
           <entry key="js" value="36" />
-          <entry key="md" value="107" />
-          <entry key="py" value="5051" />
-          <entry key="txt" value="438" />
+          <entry key="md" value="140" />
+          <entry key="py" value="5334" />
+          <entry key="txt" value="450" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="4053" />
           <entry key="JavaScript" value="36" />
-          <entry key="Markdown" value="107" />
-          <entry key="PLAIN_TEXT" value="438" />
-          <entry key="Python" value="5051" />
+          <entry key="Markdown" value="140" />
+          <entry key="PLAIN_TEXT" value="450" />
+          <entry key="Python" value="5334" />
         </counts>
       </usages-collector>
     </session>
@@ -113,52 +118,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notification/views.py">
+        <entry file="file://$PROJECT_DIR$/login/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="13" column="70" lean-forward="true" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
+            <state relative-caret-position="1040">
+              <caret line="65" column="43" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
               <folding>
-                <element signature="e#0#71#0" expanded="true" />
+                <element signature="e#0#54#0" expanded="true" />
+                <marker date="1543316216423" expanded="true" signature="784:789" ph="..." />
+                <marker date="1543316216423" expanded="true" signature="899:904" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login/templates/shipmanage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15">
-              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shipmanage/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="4" column="51" lean-forward="true" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="224">
-                <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login/templates/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -172,10 +140,40 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shipmanage/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/notification/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shipmanage/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notification/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
+            <state relative-caret-position="48">
               <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="15" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -231,8 +229,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/shipmanage/models.py" />
-        <option value="$PROJECT_DIR$/shipmanage/admin.py" />
         <option value="$PROJECT_DIR$/static/login/js/jquery.min.js" />
         <option value="$PROJECT_DIR$/login/templates/index1.html" />
         <option value="$PROJECT_DIR$/login/admin.py" />
@@ -257,14 +253,16 @@
         <option value="$PROJECT_DIR$/login/templates/detail.html" />
         <option value="$PROJECT_DIR$/login/templates/change_email.html" />
         <option value="$PROJECT_DIR$/notification/urls.py" />
-        <option value="$PROJECT_DIR$/login/templates/index.html" />
-        <option value="$PROJECT_DIR$/login/templates/ordermanage.html" />
-        <option value="$PROJECT_DIR$/login/templates/profiles.html" />
-        <option value="$PROJECT_DIR$/login/templates/shipmanage.html" />
         <option value="$PROJECT_DIR$/notification/views.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/login/templates/shipmanage.html" />
+        <option value="$PROJECT_DIR$/login/templates/profiles.html" />
+        <option value="$PROJECT_DIR$/login/templates/ordermanage.html" />
         <option value="$PROJECT_DIR$/login/templates/notification_detail.html" />
         <option value="$PROJECT_DIR$/login/templates/notification.html" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/login/templates/index.html" />
+        <option value="$PROJECT_DIR$/shipmanage/admin.py" />
+        <option value="$PROJECT_DIR$/shipmanage/models.py" />
       </list>
     </option>
   </component>
@@ -292,6 +290,21 @@
             <path>
               <item name="LogisticsIS" type="b2602c69:ProjectViewProjectNode" />
               <item name="LogisticsIS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LogisticsIS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LogisticsIS" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LogisticsIS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LogisticsIS" type="462c0819:PsiDirectoryNode" />
+              <item name="notification" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LogisticsIS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LogisticsIS" type="462c0819:PsiDirectoryNode" />
+              <item name="shipmanage" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -550,7 +563,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544076652883</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="加入README文件">
+      <created>1544077999728</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1544077999728</updated>
+    </task>
+    <task id="LOCAL-00029" summary="README修正">
+      <created>1544078445964</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1544078445964</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView">
@@ -566,7 +593,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21581769" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21849866" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -580,7 +607,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49865952" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50268096" side_tool="true" weight="0.32624114" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49731904" visible="true" weight="0.32624114" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49731904" weight="0.32577905" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -588,6 +615,29 @@
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" weight="0.3297587" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21849866" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32907802" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49865952" weight="0.32907802" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50268096" side_tool="true" weight="0.32624114" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49731904" visible="true" weight="0.32577905" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32907802" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3297587" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -632,8 +682,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="shipmanager数据库雏形(泊位和船只)" />
-    <MESSAGE value="login模块补全，输入空字段仍然报错" />
     <MESSAGE value="修复了一些细微的bug" />
     <MESSAGE value="加入主页demo" />
     <MESSAGE value="主页大幅度更改，加入注册demo" />
@@ -657,7 +705,9 @@
     <MESSAGE value="notification0.9" />
     <MESSAGE value="notification1.0&#10;详情页加入Markdown语法支持" />
     <MESSAGE value="notification1.01小修补" />
-    <option name="LAST_COMMIT_MESSAGE" value="notification1.01小修补" />
+    <MESSAGE value="加入README文件" />
+    <MESSAGE value="README修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="README修正" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/manage.py">
@@ -743,13 +793,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shipmanage/templete/ordermanage.html" />
     <entry file="file://$PROJECT_DIR$/shipmanage/templete/shipmanage.html" />
-    <entry file="file://$PROJECT_DIR$/shipmanage/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shipmanage/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -759,9 +802,6 @@
           <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shipmanage/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/notification/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -795,36 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notification/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <marker date="1541481562187" expanded="true" signature="286:291" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="992">
-          <caret line="65" column="43" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-            <marker date="1543316216423" expanded="true" signature="784:789" ph="..." />
-            <marker date="1543316216423" expanded="true" signature="899:904" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1536">
@@ -839,24 +849,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/templates/ordermanage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="96">
+            <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/templates/profiles.html">
+    <entry file="file://$PROJECT_DIR$/notification/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="144">
+          <caret line="13" column="70" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notification/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
+        <state relative-caret-position="1087">
           <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/shipmanage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -869,66 +902,86 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/login/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-759">
-          <caret line="70" column="56" selection-start-line="70" selection-start-column="56" selection-end-line="70" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notification/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="72" column="41" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login/templates/notification.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+        <state relative-caret-position="251">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login/templates/notification_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="53" column="20" lean-forward="true" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+        <state relative-caret-position="384">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notification/views.py">
+    <entry file="file://$PROJECT_DIR$/login/templates/ordermanage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="70" lean-forward="true" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
+        <state relative-caret-position="288">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/profiles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="65" column="43" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
           <folding>
-            <element signature="e#0#71#0" expanded="true" />
+            <element signature="e#0#54#0" expanded="true" />
+            <marker date="1543316216423" expanded="true" signature="784:789" ph="..." />
+            <marker date="1543316216423" expanded="true" signature="899:904" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/templates/shipmanage.html">
+    <entry file="file://$PROJECT_DIR$/shipmanage/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shipmanage/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="272">
+          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1541481562187" expanded="true" signature="286:291" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notification/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shipmanage/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="51" lean-forward="true" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="224">
-            <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          </first_editor>
-          <second_editor />
+        <state relative-caret-position="384">
+          <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
         </state>
       </provider>
     </entry>
