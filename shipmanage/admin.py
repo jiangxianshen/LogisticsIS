@@ -15,4 +15,5 @@ class BerthAdmin(admin.ModelAdmin):
 
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
-    pass
+
+    list_display = ("order_id", "goods_name", "goods_amount", "unit",)

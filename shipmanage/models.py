@@ -39,6 +39,9 @@ class Order(models.Model):
     order_id = models.CharField(primary_key=True, default=orderid_generate(), max_length=18, editable=False)
     goods_name = models.CharField(max_length=50)
     goods_amount = models.IntegerField(max_length=20)
+    unit = models.CharField(max_length=10, default="KG", choices=(("KG","kilogram"),
+                                                                  ("T","Ton"),
+                                                                  ))
     create_time = models.DateTimeField(auto_now_add=True)
     arrive_time = models.DateTimeField()
     ship_use = models.ForeignKey(Ship, on_delete=models.DO_NOTHING)
@@ -46,5 +49,4 @@ class Order(models.Model):
 
     def __str__(self):
         return "%s" % (self.order_id)
-
 
