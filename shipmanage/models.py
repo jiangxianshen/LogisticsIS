@@ -1,4 +1,19 @@
 from django.db import models
+import time
+import random
+
+def orderid_generate():
+    '''
+    自动按照时间生成订单号，末四位为随机码
+    '''
+    clock = time.localtime(time.time())
+    return '%04.0f%02.0f%02.0f%02.0f%02.0f%02.0f%04.0f' % (clock.tm_year,
+                                                     clock.tm_mon,
+                                                     clock.tm_mday,
+                                                     clock.tm_hour,
+                                                     clock.tm_min,
+                                                     clock.tm_sec,
+                                                     random.randint(0, 9999))
 
 # Create your models here.
 class Ship(models.Model):
@@ -21,7 +36,7 @@ class Berth(models.Model):
         return "%s" % (self.berth_name)
 
 class Order(models.Model):
-    order_id = models.IntegerField(primary_key=True)
+    order_id = models.CharField(primary_key=True, default=orderid_generate(), max_length=18, editable=False)
     goods_name = models.CharField(max_length=50)
     goods_amount = models.IntegerField(max_length=20)
     create_time = models.DateTimeField(auto_now_add=True)
@@ -31,3 +46,5 @@ class Order(models.Model):
 
     def __str__(self):
         return "%s" % (self.order_id)
+
+

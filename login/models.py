@@ -4,6 +4,9 @@ import uuid
 
 
 def uuid_hex():
+    '''
+    uuid生成十六进制注册码
+    '''
     return uuid.uuid1().hex
 
 
