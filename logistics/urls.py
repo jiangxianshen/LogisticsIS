@@ -23,4 +23,9 @@ urlpatterns = [
     path('', include("login.urls")),
     path('manage/', include("shipmanage.urls")),
     path('notification/', include("notification.urls")),
+    path(r'mdeditor/', include('mdeditor.urls'))
 ]
+
+if settings.DEBUG:
+    # static files (images, css, javascript, etc.)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -30,7 +30,7 @@ class Berth(models.Model):
     berth_name = models.CharField(max_length=50)
     berth_id = models.IntegerField(primary_key=True)
     berth_cap = models.IntegerField(editable=False, default=20)
-    berth_used = models.IntegerField(max_length=20)
+    berth_used = models.IntegerField()
 
     def __str__(self):
         return "%s" % (self.berth_name)
@@ -38,7 +38,7 @@ class Berth(models.Model):
 class Order(models.Model):
     order_id = models.CharField(primary_key=True, default=orderid_generate(), max_length=18, editable=False)
     goods_name = models.CharField(max_length=50)
-    goods_amount = models.IntegerField(max_length=20)
+    goods_amount = models.IntegerField()
     unit = models.CharField(max_length=10, default="KG", choices=(("KG","kilogram"),
                                                                   ("T","Ton"),
                                                                   ))

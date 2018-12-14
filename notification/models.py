@@ -1,10 +1,10 @@
 from django.db import models
-
+from mdeditor.fields import MDTextField
 # Create your models here.
 
 class Notification(models.Model):
     title = models.CharField(max_length=50)
-    content = models.TextField()  # Text长文本字段，可以写很多内容
+    content = MDTextField(default="")
     publish_time = models.DateTimeField(auto_now_add=True)  # 日期，新增自动写入
     recommend = models.BooleanField(default=False) #置顶
 

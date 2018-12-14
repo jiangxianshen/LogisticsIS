@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse
 from django.contrib.auth import login, logout
 from .forms import LoginForm, ProfileForm, EmailForm
 from .models import ManagerUser
+from shipmanage.models import Ship, Order, Berth
 
 # Create your views here.
 
@@ -24,7 +25,11 @@ def user_login(request):
 
 def home_page(request):
     if request.user.is_authenticated:
-        return render(request, "index.html")
+        ship = Ship.objects.all()
+        order = Order.objects.all()
+        berth = Berth.objects.all()
+        context = {'ship_count':ship.count, 'order_time':order, 'berth_count':berth.count}
+        return render(request, "index.html", context)
     else:
         return redirect('login')
 
