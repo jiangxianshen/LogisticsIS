@@ -11,5 +11,6 @@
 ## 依赖项:
 ```
 django2.0.2
+markdown2.6.11
 django-mdeditor0.1.9
 ```

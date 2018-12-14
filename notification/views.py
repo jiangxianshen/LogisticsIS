@@ -12,6 +12,8 @@ def detail(request, article_id):
                                       extension=[
                                           #缩写，表格等
                                           'markdown.extensions.extra',
+                                          'markdown.extensions.toc',
+                                          'markdown.extensions.tables'
                                       ])
     content = {"blogs": blogs, 'infer':infer}
     return render(request, "notification_detail.html", content)
