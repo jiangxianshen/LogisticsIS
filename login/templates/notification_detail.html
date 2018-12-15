@@ -1,5 +1,8 @@
 {% extends 'index.html' %}
+{% load staticfiles %}
 {% block title %}PLIS-{{ blogs.title }}{% endblock %}
+  <link href="{% static 'css/editormd.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/editormd.preview.css' %}" rel="stylesheet">
 {% block sidebar %}
 	<li class="nav-item">
 		<a href="{% url 'homepage' %}">
@@ -51,10 +54,37 @@
               <h5 class="card-title text-center">{{ blogs.title }}</h5>
                 <div class="card-text text-center">{{ blogs.publish_time|date:"Y-m-d" }}</div>
                 <hr>
-              <p class="card-text">{{ blogs.content|safe }}</p>
+              <p class="card-text" id="content"><textarea>{{ blogs.content }}</textarea></p>
                 <hr>
             </div>
          </div>
     </div>
     </div>
+    <script src="{% static 'js/jquery.min.js'%}"></script>
+    <script src="{% static 'js/editormd.min.js'%}"></script>
+    <script src="{% static 'js/lib/marked.min.js'%}"></script>
+    <script src="{% static 'js/lib/prettify.min.js'%}"></script>
+    <script src="{% static 'js/lib/raphael.min.js'%}"></script>
+    <script src="{% static 'js/lib/underscore.min.js'%}"></script>
+    <script src="{% static 'js/lib/sequence-diagram.min.js'%}"></script>
+    <script src="{% static 'js/lib/flowchart.min.js'%}"></script>
+    <script src="{% static 'js/lib/jquery.flowchart.min.js'%}"></script>
+<script>
+  $(function () {
+      // js 解析markdown
+      editormd.markdownToHTML("content", {
+          //htmlDecode      : "style,script,iframe",  // you can filter tags decode
+          emoji           : true,
+          taskList        : true,
+          tex             : true,  // 默认不解析
+          flowChart       : true,  // 默认不解析
+          sequenceDiagram : true,  // 默认不解析
+      });
+
+      $(".reference-link").each(function (i,obj) {
+        console.log(obj)
+      })
+  })
+
+</script>
 {% endblock %}

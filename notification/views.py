@@ -2,19 +2,11 @@ from django.shortcuts import render, get_object_or_404, get_list_or_404
 from django.http import Http404
 from django.core.paginator import Paginator
 from .models import Notification
-import markdown
 
 
 def detail(request, article_id):
     blogs = get_object_or_404(Notification, id=article_id)
     infer = request.GET.get('infer')
-    blogs.content = markdown.markdown(blogs.content,
-                                      extension=[
-                                          #缩写，表格等
-                                          'markdown.extensions.extra',
-                                          'markdown.extensions.toc',
-                                          'markdown.extensions.tables'
-                                      ])
     content = {"blogs": blogs, 'infer':infer}
     return render(request, "notification_detail.html", content)
 
