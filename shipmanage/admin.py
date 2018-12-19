@@ -16,4 +16,4 @@ class BerthAdmin(admin.ModelAdmin):
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
 
-    list_display = ("order_id", "goods_name", "goods_amount", "unit",)
+    list_display = ("order_id", "goods_name", "goods_amount", "unit", "order_status", )

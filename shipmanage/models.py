@@ -38,15 +38,19 @@ class Berth(models.Model):
 class Order(models.Model):
     order_id = models.CharField(primary_key=True, default=orderid_generate(), max_length=18, editable=False)
     goods_name = models.CharField(max_length=50)
+    cargo_owner = models.CharField(max_length=50, default=" ")
     goods_amount = models.IntegerField()
     unit = models.CharField(max_length=10, default="KG", choices=(("KG","kilogram"),
                                                                   ("T","Ton"),
                                                                   ))
-    create_time = models.DateTimeField(auto_now_add=True)
-    arrive_time = models.DateTimeField()
+    create_time = models.DateTimeField(auto_now_add=True, editable=False)
+    target_port = models.CharField(max_length=50, default=" ")
+    arrive_time = models.DateTimeField(blank=True, null=True)
     ship_use = models.ForeignKey(Ship, on_delete=models.DO_NOTHING)
+    manager = models.CharField(max_length=50, default=" ")
     order_status = models.BooleanField(default=False) #False表示订单未完成
 
     def __str__(self):
         return "%s" % (self.order_id)
+
 
