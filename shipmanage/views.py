@@ -1,15 +1,22 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.db import models
 from django.utils import timezone
-from .models import Order
+from .models import Order, Ship
+from .forms import OrderForm
 # Create your views here.
 
 def ship_manage(request):
-    return render(request, "shipmanage.html")
+    if request.user.is_authenticated:
+        return render(request, "shipmanage.html")
+    else:
+        return redirect('login')
 
 
 def order_manage(request):
-    return render(request, "ordermanage.html")
+    if request.user.is_authenticated:
+        return render(request, "ordermanage.html")
+    else:
+        return redirect('login')
 
 
 def order_detail(request, order_id):
@@ -28,10 +35,44 @@ def order_detail(request, order_id):
 
 
 def ship_detail(request, ship_id):
-    pass
+    if request.user.is_authenticated:
+        pass
+    else:
+        return redirect('login')
 
 def order_create(request):
-    pass
+    if request.user.is_authenticated:
+        if request.method == 'POST':
+            Order_form = OrderForm(request.POST, user=request.user)
+            if Order_form.is_valid():
+                user = request.user
+                goods_name = Order_form.cleaned_data['goods_name']
+                cargo_owner = Order_form.cleaned_data['cargo_owner']
+                goods_amount = Order_form.cleaned_data['goods_amount']
+                unit = Order_form.cleaned_data['unit']
+                target_port = Order_form.cleaned_data['target_port']
+                ship_name = Order_form.cleaned_data['ship_use']
+                ship_use = Ship.objects.get(ship_name=ship_name)
+                manager = user.username
+                new_order = Order.objects.create(goods_name=goods_name,
+                                                cargo_owner=cargo_owner,
+                                                goods_amount=goods_amount,
+                                                unit=unit,
+                                                target_port=target_port,
+                                                ship_use=ship_use,
+                                                manager=manager)
+                message = new_order.order_id
+                context = {'Order_form': Order_form, 'message': message}
+                return render(request, "order_create.html", context)
+        else:
+            Order_form = OrderForm()
+            context = {'Order_form': Order_form,}
+            return render(request, "order_create.html", context)
+    else:
+        return redirect('login')
 
 def search_order(request):
-    pass
+    if request.user.is_authenticated:
+        pass
+    else:
+        return redirect('login')

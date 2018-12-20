@@ -41,7 +41,7 @@
                   </tr>
                     <tr>
                     <th scope="col">使用船只</th>
-                    <td><a href="#">{{ order.ship_use }}</a></td>
+                    <td><a href="/{{ order.ship_use.ship_id }}">{{ order.ship_use }}</a></td>
                   </tr>
                   <tr>
                     <th scope="col">订单负责人</th>
@@ -67,10 +67,10 @@
             {% if order.order_status == False %}
             <div class="card">
               <div class="card-header">
-                <h4 class="card-title">订单是否已经完成？</h4>
-                <p class="text-warning">注意：此项操作不可逆</p>
+                <h4 class="card-title">确认订单已完成</h4>
               </div>
                <div class="card-body">
+                   <p class="text-warning">订单是否已经完成？注意：此项操作不可逆</p>
                    <form method="POST" novalidate="" action="{% url 'order_detail' order.order_id %}">
                        {% csrf_token %}
                        <button type="submit" class="btn btn-success" name="ensure">确认完成</button>
