@@ -1,20 +1,30 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from django.db import models
 from django.utils import timezone
+from django.core.paginator import Paginator
 from .models import Order, Ship
 from .forms import OrderForm
 # Create your views here.
 
-def ship_manage(request):
+def ship_manage(request, num):
     if request.user.is_authenticated:
+        page = Paginator(Order.objects.filter(), per_page=10)
         return render(request, "shipmanage.html")
     else:
         return redirect('login')
 
 
-def order_manage(request):
+def order_manage(request, num):
     if request.user.is_authenticated:
-        return render(request, "ordermanage.html")
+        if request.method == 'POST':
+            keyword = request.POST.get()
+            content = {}
+        else:
+            page = Paginator(Order.objects, per_page=20)
+            orders = page.page(num)
+            content = {"orders": orders,
+                       'page_num': num,
+                       'count': page.count // 10 + 1}
+        return render(request, "ordermanage.html", content)
     else:
         return redirect('login')
 

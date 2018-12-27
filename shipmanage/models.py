@@ -21,6 +21,10 @@ class Ship(models.Model):
     ship_name = models.CharField(max_length=50)
     is_anchored = models.BooleanField(default=True)
     ship_manager = models.CharField(max_length=20)
+    ship_capacity = models.IntegerField(default=15)
+    url_height = models.PositiveIntegerField(default=75)
+    url_width = models.PositiveIntegerField(default=75)
+    ship_photo = models.ImageField(upload_to="icons", height_field='url_height', width_field='url_width')
 
     def __str__(self):
         return "%s" % (self.ship_name)
