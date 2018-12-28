@@ -41,4 +41,92 @@
 	</li>
 {% endblock %}
 {% block main-panel %}
+       <div class="content">
+      <div class="container-fluid">
+        <h4 class="page-title">货物订单界面</h4>
+        <div class="row">
+          <div class="col-md-9">
+            <div class="card">
+              <form method="POST" action="{% url 'order' 1 %}">
+              <div class="input-group">
+                {% csrf_token %}
+                <input type="text" class="form-control" placeholder="请输入要查询的字段，支持模糊查询" name="keyword">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="submit">订单搜索</button>
+                </div>
+              </div>
+             </form>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title"> 订单详情</div>
+              </div>
+              <div class="card-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">是否完成</th>
+                      <th scope="col">订单编号</th>
+                      <th scope="col">订单货物类型</th>
+                      <th scope="col">订单生成时间</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  {% for order in orders %}
+                    <tr>
+                      <th scope="row">
+                          {% if order.order_status == True %}
+                              <img src="/static/admin/img/icon-yes.svg" alt="True">
+                          {% else %}
+                              <img src="/static/admin/img/icon-no.svg" alt="False">
+                          {% endif %}
+                      </th>
+                        <td><a href="{% url 'order_detail' order.order_id %}">{{ order.order_id }}</a></td>
+                      <td>{{ order.goods_name }}</td>
+                      <td>{{ order.create_time|date:'Y-m-d H:i:s' }}</td>
+                    </tr>
+                  {% endfor %}
+                  </tbody>
+                </table>
+                  <nav aria-label="Page navigation example">
+                  {% if page_num %}
+              <ul class="pagination justify-content-center">
+                  {% if page_num == 1 %}
+                <li class="page-item disabled">
+                  <a class="page-link" href="#"><font color="#f5f5f5">首页</font></a>
+                </li>
+                  {% else %}
+                <li class="page-item">
+                  <a class="page-link" href="{% url 'notification' 1 %}">首页</a>
+                </li>
+                  {% endif %}
+                  {% if page_num|add:-1 < 1 %}
+                  {% else %}
+                <li class="page-item"><a class="page-link" href="{% url 'notification' page_num|add:-1 %}">{{ page_num|add:-1 }}</a></li>
+                  {% endif %}
+                <li class="page-item active">
+                  <a class="page-link" href="#">{{ page_num }}<span class="sr-only">(current)</span></a>
+                </li>
+                  {% if page_num|add:1 > count %}
+                  {% else %}
+                <li class="page-item"><a class="page-link" href="{% url 'notification' page_num|add:1 %}">{{ page_num|add:1 }}</a></li>
+                  {% endif %}
+                  {% if page_num == count %}
+                <li class="page-item disabled">
+                  <a class="page-link" href="#"><font color="#f5f5f5">尾页</font></a>
+                </li>
+                  {% else %}
+                <li class="page-item">
+                  <a class="page-link" href="{% url 'notification' count %}">尾页</a>
+                </li>
+                  {% endif %}
+              </ul>
+                  {% endif %}
+            </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 {% endblock %}

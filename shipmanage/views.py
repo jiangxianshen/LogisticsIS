@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from django.core.paginator import Paginator
+from django.db.models import Q
 from .models import Order, Ship
 from .forms import OrderForm
 # Create your views here.
@@ -15,11 +16,12 @@ def ship_manage(request, num):
 
 def order_manage(request, num):
     if request.user.is_authenticated:
-        if request.method == 'POST':
-            keyword = request.POST.get()
-            content = {}
+        if request.method == 'POST' and request.POST.get('keyword'):
+            keyword = request.POST.get('keyword')
+            orders = Order.objects.filter(Q(order_id__regex=keyword)|Q(goods_name__regex=keyword))
+            content = {"orders": orders}
         else:
-            page = Paginator(Order.objects, per_page=20)
+            page = Paginator(Order.objects.all(), per_page=20)
             orders = page.page(num)
             content = {"orders": orders,
                        'page_num': num,

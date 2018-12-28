@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80a1fe75-6467-4a4f-8cd3-a04c7f832831" name="Default Changelist" comment="shipmanage0.2&#10;*为船舶添加预览图">
-      <change afterPath="$PROJECT_DIR$/shipmanage/migrations/0013_auto_20181228_0016.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shipmanage/migrations/0014_auto_20181228_0018.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/icons/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/icons/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/icons/3.jpg" afterDir="false" />
+    <list default="true" id="80a1fe75-6467-4a4f-8cd3-a04c7f832831" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/templates/notification.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/templates/notification.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/templates/notification_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/templates/notification_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/templates/order_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/templates/order_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login/templates/ordermanage.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/templates/ordermanage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/templates/profiles.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/templates/profiles.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login/templates/shipmanage.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/templates/shipmanage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shipmanage/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/shipmanage/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shipmanage/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shipmanage/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shipmanage/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shipmanage/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shipmanage/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shipmanage/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,56 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shipmanage/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="36" column="14" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shipmanage/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logistics/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="133" column="21" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shipmanage/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shipmanage/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            <state relative-caret-position="224">
+              <caret line="20" column="98" selection-start-line="20" selection-start-column="98" selection-end-line="20" selection-end-column="98" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -101,10 +44,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shipmanage/urls.py">
+        <entry file="file://$PROJECT_DIR$/shipmanage/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="375">
+              <caret line="54" column="16" lean-forward="true" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="16" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -113,10 +56,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login/templates/profiles.html">
+        <entry file="file://$PROJECT_DIR$/login/templates/ordermanage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+            <state relative-caret-position="1343">
+              <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login/templates/change_email.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="28" column="98" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login/templates/shipmanage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shipmanage/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shipmanage/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,19 +177,19 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/notification/views.py" />
         <option value="$PROJECT_DIR$/login/views.py" />
-        <option value="$PROJECT_DIR$/login/templates/order_detail.html" />
         <option value="$PROJECT_DIR$/shipmanage/forms.py" />
         <option value="$PROJECT_DIR$/login/templates/order_create.html" />
-        <option value="$PROJECT_DIR$/shipmanage/views.py" />
         <option value="$PROJECT_DIR$/shipmanage/urls.py" />
-        <option value="$PROJECT_DIR$/login/templates/shipmanage.html" />
         <option value="$PROJECT_DIR$/login/templates/profiles.html" />
-        <option value="$PROJECT_DIR$/login/templates/ordermanage.html" />
         <option value="$PROJECT_DIR$/login/templates/notification_detail.html" />
         <option value="$PROJECT_DIR$/login/templates/notification.html" />
         <option value="$PROJECT_DIR$/login/templates/index.html" />
         <option value="$PROJECT_DIR$/shipmanage/models.py" />
         <option value="$PROJECT_DIR$/shipmanage/admin.py" />
+        <option value="$PROJECT_DIR$/login/templates/shipmanage.html" />
+        <option value="$PROJECT_DIR$/login/templates/order_detail.html" />
+        <option value="$PROJECT_DIR$/login/templates/ordermanage.html" />
+        <option value="$PROJECT_DIR$/shipmanage/views.py" />
       </list>
     </option>
   </component>
@@ -235,22 +220,13 @@
             <path>
               <item name="LogisticsIS" type="b2602c69:ProjectViewProjectNode" />
               <item name="LogisticsIS" type="462c0819:PsiDirectoryNode" />
-              <item name="logistics" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LogisticsIS" type="b2602c69:ProjectViewProjectNode" />
               <item name="LogisticsIS" type="462c0819:PsiDirectoryNode" />
               <item name="shipmanage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LogisticsIS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LogisticsIS" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LogisticsIS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LogisticsIS" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -331,7 +307,8 @@
       <workItem from="1545575632089" duration="526000" />
       <workItem from="1545913534371" duration="602000" />
       <workItem from="1545915010469" duration="1748000" />
-      <workItem from="1545927171438" duration="1007000" />
+      <workItem from="1545927171438" duration="1158000" />
+      <workItem from="1545978929067" duration="5472000" />
     </task>
     <task id="LOCAL-00001" summary="继承abstractuser并创建了superuser">
       <created>1540541327890</created>
@@ -585,11 +562,18 @@
       <option name="project" value="LOCAL" />
       <updated>1545287592886</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="shipmanage0.3&#10;*为船舶添加预览图字段&#10;*修改了admin界面&#10;*和一些细微的改动">
+      <created>1545928268628</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1545928268629</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27369000" />
+    <option name="totallyTimeSpent" value="32992000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -604,7 +588,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.82952183" visible="true" weight="0.14745308" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.82952183" visible="true" weight="0.1494638" />
       <window_info id="Structure" order="1" sideWeight="0.17047817" side_tool="true" weight="0.14544237" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -618,7 +602,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49865952" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50268096" side_tool="true" weight="0.32624114" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49731904" visible="true" weight="0.3186969" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49731904" visible="true" weight="0.3186969" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -704,7 +688,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="删除index中的bootstrap的右下角alert元素" />
     <MESSAGE value="加入logo，优化index" />
     <MESSAGE value="个人资料demo" />
     <MESSAGE value="加入index中的slide图片" />
@@ -729,7 +712,8 @@
     <MESSAGE value="notification1.2&#10;*修复bug" />
     <MESSAGE value="notification1.3&#10;*用mdeditor的js实现md渲染，不再依赖残废markdown库" />
     <MESSAGE value="shipmanage0.2&#10;*完成订单添加demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="shipmanage0.2&#10;*完成订单添加demo" />
+    <MESSAGE value="shipmanage0.3&#10;*为船舶添加预览图字段&#10;*修改了admin界面&#10;*和一些细微的改动" />
+    <option name="LAST_COMMIT_MESSAGE" value="shipmanage0.3&#10;*为船舶添加预览图字段&#10;*修改了admin界面&#10;*和一些细微的改动" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/login/templates/index1.html" />
@@ -888,13 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/templates/order_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="56" column="33" lean-forward="true" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login/templates/order_create.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -909,27 +886,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/templates/change_email.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login/templates/forgot.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-80">
           <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="50" column="68" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -940,13 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/templates/notification.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login/templates/notification_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -954,17 +907,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/templates/ordermanage.html">
+    <entry file="file://$PROJECT_DIR$/login/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        <state relative-caret-position="176">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/templates/shipmanage.html">
+    <entry file="file://$PROJECT_DIR$/logistics/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        <state relative-caret-position="2128">
+          <caret line="133" column="21" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -978,26 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shipmanage/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shipmanage/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login/templates/profiles.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -1005,10 +938,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/models.py">
+    <entry file="file://$PROJECT_DIR$/shipmanage/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        <state relative-caret-position="320">
+          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1022,29 +958,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logistics/settings.py">
+    <entry file="file://$PROJECT_DIR$/login/templates/shipmanage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="133" column="21" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
+        <state relative-caret-position="319">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shipmanage/models.py">
+    <entry file="file://$PROJECT_DIR$/login/templates/notification.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="36" column="14" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="14" />
+        <state relative-caret-position="863">
+          <caret line="94" column="21" lean-forward="true" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shipmanage/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shipmanage/admin.py">
+    <entry file="file://$PROJECT_DIR$/login/templates/order_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+        <state relative-caret-position="215">
+          <caret line="61" column="100" selection-start-line="61" selection-start-column="100" selection-end-line="61" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/change_email.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="28" column="98" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="50" column="68" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="68" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shipmanage/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="54" column="16" lean-forward="true" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/ordermanage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shipmanage/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="20" column="98" selection-start-line="20" selection-start-column="98" selection-end-line="20" selection-end-column="98" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
           </folding>
         </state>
       </provider>
