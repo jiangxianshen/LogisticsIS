@@ -193,8 +193,8 @@
 											</div>
 											<div class="col-7 d-flex align-items-center">
 												<div class="numbers">
-													<p class="card-category">今日订单</p>
-													<h4 class="card-title">21</h4>
+													<p class="card-category">订单数目</p>
+													<h4 class="card-title">{{ order_count }}</h4>
 												</div>
 											</div>
 										</div>
@@ -326,19 +326,19 @@
 										<div class="progress-card">
 											<div class="d-flex justify-content-between mb-1">
 												<span class="text-muted">订单完成情况</span>
-												<span class="text-muted fw-bold"> 21</span>
+												<span class="text-muted fw-bold"> {% widthratio order_count 100 order_per %}</span>
 											</div>
 											<div class="progress mb-2" style="height: 7px;">
-												<div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="65%"></div>
+												<div class="progress-bar bg-info" role="progressbar" style="width: {{ order_per }}%" aria-valuenow="{{ order_per }}" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="{{ order_per }}%"></div>
 											</div>
 										</div>
 										<div class="progress-card">
 											<div class="d-flex justify-content-between mb-1">
 												<span class="text-muted">船只使用率</span>
-												<span class="text-muted fw-bold"> 70%</span>
+												<span class="text-muted fw-bold"> {{ ship_per }}%</span>
 											</div>
 											<div class="progress mb-2" style="height: 7px;">
-												<div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="70%"></div>
+												<div class="progress-bar bg-primary" role="progressbar" style="width: {{ ship_per }}%" aria-valuenow="{{ ship_per }}" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="{{ ship_per }}%"></div>
 											</div>
 										</div>
 										<div class="progress-card">

@@ -53,7 +53,7 @@
               <div class="card-body">
                 <div class="card-deck">
                     {% for ship in ships %}
-                  <div class="card"> <img class="card-img-top" src="/media/{{ ship.ship_photo }}" alt="Card image cap">
+                  <div class="card"> <img class="card-img-top" height="180" src="/media/{{ ship.ship_photo }}" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">{{ ship.ship_name }}</h5>
                       <a href="{% url 'ship_detail' ship.ship_id %}" class="btn btn-primary">查看详情</a> </div>

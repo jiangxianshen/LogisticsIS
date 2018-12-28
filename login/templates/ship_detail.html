@@ -64,7 +64,7 @@
                   </tr>
                   <tr>
                     <th scope="col">所属公司</th>
-                    <td>{{ ship. }}</td>
+                    <td>{{ ship.ship_owner }}</td>
                   </tr>
                   <tr>
                     <th scope="col">运货数量</th>
@@ -84,13 +84,9 @@
                         {% endif %}
                     </td>
                   </tr>
-                    {% if ship.is_anchored %}
-                    {% else %}
-                   <tr>
-                    <th scope="col">预计到港时间</th>
-                    <td>Date</td>
+                    <tr>
+                    <td><a href="{% url 'ships' 1 %}"><button class="btn btn-danger" type="button">返回船舶页</button></a></td>
                   </tr>
-                     {% endif %}
                 </table>
               </div>
             </div>

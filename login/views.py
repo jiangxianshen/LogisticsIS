@@ -28,7 +28,13 @@ def home_page(request):
         ship = Ship.objects.all()
         order = Order.objects.all()
         berth = Berth.objects.all()
-        context = {'ship_count':ship.count, 'order_time':order, 'berth_count':berth.count}
+        order_per = order.filter(order_status=True).count()/order.count()*100
+        ship_per = ship.filter(is_anchored=True).count() / ship.count() * 100
+        context = {'ship_count':ship.count,
+                   'order_count':order.count,
+                   'berth_count':berth.count,
+                   'order_per':order_per,
+                   'ship_per':ship_per}
         return render(request, "index.html", context)
     else:
         return redirect('login')
