@@ -41,7 +41,7 @@
                   </tr>
                     <tr>
                     <th scope="col">使用船只</th>
-                    <td><a href="/{{ order.ship_use.ship_id }}">{{ order.ship_use }}</a></td>
+                    <td><a href="{% url 'ship_detail' order.ship_use.ship_id %}">{{ order.ship_use }}</a></td>
                   </tr>
                   <tr>
                     <th scope="col">订单负责人</th>
@@ -59,7 +59,7 @@
                   </tr>
                 </table>
                 <table class="table table-striped table-striped-bg-default mt-3">
-                    <a href="{% url 'order' 1 %}"><button class="btn btn-danger" type="button">返回管理页</button></a>
+                    <a href="{% url 'order' 1 %}"><button class="btn btn-danger" type="button">返回订单页</button></a>
                 </table>
               </div>
             </div>

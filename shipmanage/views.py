@@ -8,8 +8,12 @@ from .forms import OrderForm
 
 def ship_manage(request, num):
     if request.user.is_authenticated:
-        page = Paginator(Order.objects.filter(), per_page=10)
-        return render(request, "shipmanage.html")
+        page = Paginator(Ship.objects.all(), per_page=6)
+        ships = page.page(num)
+        content = {"ships": ships,
+                   'page_num': num,
+                   'count': page.count // 10 + 1}
+        return render(request, "shipmanage.html",content)
     else:
         return redirect('login')
 
@@ -48,7 +52,9 @@ def order_detail(request, order_id):
 
 def ship_detail(request, ship_id):
     if request.user.is_authenticated:
-        pass
+        ship = get_object_or_404(Ship, ship_id=ship_id)
+        content = {"ship":ship}
+        return render(request, "ship_detail.html",content)
     else:
         return redirect('login')
 
